@@ -1,0 +1,45 @@
+.main
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    grid-column-gap: 3rem
+    grid-row-gap: 2.4rem
+    margin-top: 16.4rem
+    margin-bottom: 6rem
+    &__block
+        &_1
+            grid-area: 1 / 1 / 2 / 3
+            background: $moderate-violet
+            background-image: url('../../images/background-comas.png')
+            background-repeat: no-repeat
+            background-position: top right (8rem)
+            @include block-font($moderate-violet)
+        &_2
+            grid-area: 1 / 3 / 2 / 4
+            background: $very-dark-grayish-blue
+            @include block-font($very-dark-grayish-blue)
+        &_3
+            grid-area: 2 / 1 / 3 / 2
+            background: $white
+            @include block-font($white)
+        &_4
+            grid-area: 2 / 2 / 3 / 4
+            background: $very-dark-blackish-blue
+            @include block-font($very-dark-blackish-blue)
+        &_5
+            grid-area: 1 / 4 / 3 / 5
+            background: $white
+            @include block-font($white)
+
+//Media Queries
+@media ( max-width: 1004px )
+    .main
+        grid-column-gap: 2rem
+        grid-row-gap: 1.4rem
+
+@media ( max-width: 870px )
+    .main
+        display: block
+        margin-top: 7.1rem
+        &__block_1
+            background-position-x: right (2.4rem)

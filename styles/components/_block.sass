@@ -1,0 +1,35 @@
+.block
+    box-sizing: border-box
+    padding: 2.5rem 3.1rem 3rem
+    border-radius: 5px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    -webkit-box-shadow: 40px 60px 50px -47px rgba(72,85,106,0.24)
+    -moz-box-shadow: 40px 60px 50px -47px rgba(72,85,106,0.24)
+    box-shadow: 40px 60px 50px -47px rgba(72,85,106,0.24)
+    &__top
+        display: flex
+        flex-direction: row
+        align-items: center
+        margin-bottom: 1.8rem
+        align-self: flex-start
+    &__img
+        width: 2.8rem
+        border-radius: 50%
+        margin-right: 1.7rem
+        &_border
+            border: 2px #A775F1 solid
+
+    &__testimony
+        margin-bottom: 1.6rem
+
+//Media Queries
+@media ( max-width: 991px )
+    .block
+        display: block
+
+@media ( max-width: 870px )
+    .block
+        margin-bottom: 2.4rem

@@ -1,0 +1,9 @@
+@use 'sass:math'
+
+@mixin block-font($color)
+    @if $color == $moderate-violet or $color == $very-dark-grayish-blue
+        color: $white
+    @else if $color == $very-dark-blackish-blue
+        color: $light-gray
+    @else if $color == $white
+        color: $very-dark-grayish-blue
