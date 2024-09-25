@@ -55,7 +55,7 @@ body {
 .main__block_1 {
   grid-area: 1/1/2/3;
   background: hsl(263, 55%, 52%);
-  background-image: url("../../images/background-comas.png");
+  background-image: url("../images/background-comas.png");
   background-repeat: no-repeat;
   background-position: top right 8rem;
   color: hsl(0, 0%, 100%);
